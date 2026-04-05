@@ -66,7 +66,7 @@ def parse_string_to_list(my_list):
     return my_list
 
 def get_suggestions():
-    data = pd.read_csv('main_data.csv')
+    data = pd.read_csv('./Artifacts/main_data.csv')
     return list(data['movie_title'].str.capitalize())
 
 app = Flask(__name__)
